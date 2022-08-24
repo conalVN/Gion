@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap');
+
 :root {
     --primary-color: rgba(252, 166, 63, 1);
     --primary-text: rgb(6, 143, 70);
@@ -13,12 +14,12 @@ html {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    font-family: 'Poppins', sans-serif;
 }
 html::-webkit-scrollbar {
     display: none;
 }
 body {
+    font-family: 'Signika', sans-serif;
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
@@ -48,6 +49,9 @@ header>section {
     text-decoration: none;
 }
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: var(--height-header);
     margin: 1rem auto;
@@ -60,11 +64,19 @@ header>section {
     background-position: center;
     background-repeat: no-repeat;
 }
+.icon-menu {
+    display: none;
+}
+.btn-close {
+    display: none;
+}
 .header__right {
     height: 100%;
+    display: flex;
+    align-items: center;
 }
-
 .menu {
+    display: flex;
     align-items: center;
 }
 .menu-item {

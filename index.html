@@ -8,7 +8,9 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
     <div class="container-fluit">
@@ -29,10 +31,14 @@
                     </ul>
                 </div>
             </section>
-            <div class="header container d-flex align-center justify-content-between">
+            <div class="header container">
                 <div class="logo"></div>
-                <div class="header__right d-flex align-center">
-                    <ul class="menu d-flex">
+                <div class="icon-menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="header__right">
+                    <button class="btn-close"></button>
+                    <ul class="menu">
                         <li class="menu-item">
                             <a href="" class="menu-link">Trang Chủ</a>
                         </li>
@@ -68,7 +74,7 @@
             <section class="container">
                 <div class="content__sale">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <div class="sale-description">
                                 <h5>Xem khuyến mãi dành cho bạn</h5>
                                 <h3>Mua ngay<br /> săn mã giảm giá</h3>
@@ -81,7 +87,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 mt">
                             <div class="box__voucher">
                                 <div class="box__voucher-t">
                                     <span>Đơn từ 100k</span>
@@ -92,7 +98,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 mt">
                             <div class="box__voucher">
                                 <div class="box__voucher-t">
                                     <span>Đơn từ 200k</span>
@@ -110,7 +116,7 @@
             <section class="container-fluit" style="background-color: var(--primary-color);">
                 <div id="menu" class="content__menu container">
                     <div class="row">
-                        <div class="col-4 mx-auto">
+                        <div class="col-md-4 mx-auto">
                             <div class="menu__box">
                                 <p class="menu__box-title">Thông tin các loại</p>
                                 <ul>
@@ -130,7 +136,7 @@
                                 <button class="btn">Giỏ Hàng</button>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-md-8">
                             <div class="menu-description">
                                 <h6>Tìm hiểu thêm</h6>
                                 <h3>Hạt sấy khô "Giòn" an toàn <br/>
@@ -150,43 +156,43 @@
             <section class="container-fluit">
                 <div id="sale" class="content__product container">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-md-3 mt-2">
                             <div class="content__product-item">
                                 <div class="product-item-name">Óc chó</div>
                                 <div class="product-item-image" style="background-image: url(./source/2.png);"></div>
                                 <div class="product-item-price">
                                     Giá:
-                                    <span>99k</span>
+                                    <span>99.000&#8363;</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 mt-2">
                             <div class="content__product-item">
                                 <div class="product-item-name">Giẻ cười</div>
                                 <div class="product-item-image" style="background-image: url(./source/4.png);"></div>
                                 <div class="product-item-price">
                                     Giá:
-                                    <span>99k</span>
+                                    <span>99.000&#8363;</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 mt-2">
                             <div class="content__product-item">
                                 <div class="product-item-name">Mác ca</div>
                                 <div class="product-item-image" style="background-image: url(./source/5.png);"></div>
                                 <div class="product-item-price">
                                     Giá:
-                                    <span>99k</span>
+                                    <span>99.000&#8363;</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3 mt-2">
                             <div class="content__product-item">
                                 <div class="product-item-name">Điều</div>
                                 <div class="product-item-image" style="background-image: url(./source/3.png);"></div>
                                 <div class="product-item-price">
                                     Giá:
-                                    <span>99k</span>
+                                    <span>99.000&#8363;</span>
                                 </div>
                             </div>
                         </div>
@@ -207,17 +213,17 @@
                         cho gia đình.
                     </p>
                     <div>
-                        <div class="row">
-                            <div class="col-3">
+                        <div class="row m-0">
+                            <div class="col-md-3 col-6 mt-1">
                                 <div class="content__intro-itemImg" style="background-image: url(./source/6.png);"></div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-3 col-6 mt-1 ">
                                 <div class="content__intro-itemImg" style="background-image: url(./source/7.png);"></div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-3 col-6 mt-1 ">
                                 <div class="content__intro-itemImg" style="background-image: url(./source/8.png);"></div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-3 col-6 mt-1 ">
                                 <div class="content__intro-itemImg" style="background-image: url(./source/9.png);"></div>
                             </div>
                         </div>
@@ -245,19 +251,19 @@
                     </div>
                     <div class="content__statistics">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h1>999+</h1>
                                 <p>Đã đặt hàng thành công</p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h1>999+</h1>
                                 <p>Đang truy cập</p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h1>999+</h1>
                                 <p>Đơn hàng đã thanh toán</p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3">
                                 <h1>559+</h1>
                                 <p>Phiếu giảm giá sản phẩm</p>
                             </div>
@@ -276,7 +282,7 @@
                     <h1>Tổng hợp 4 loại hạt và trái cây sấy khô</h1>
                     <div class="content__news">
                         <div class="row justify-content-center">
-                            <div class="col-3">
+                            <div class="col-md-3 col-12 mt-2">
                                 <div class="content__post">
                                     <div class="content__post-img" style="background-image: url(./source/2.png)"></div>
                                     <div class="content__post-name" data-content="15 oct">
@@ -286,7 +292,7 @@
                                         Quả óc chó có vẻ ngoài gần giống với não người, nhiều người...                                    </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-12 mt-2">
                                 <div class="content__post">
                                     <div class="content__post-img" style="background-image: url(./source/5.png)"></div>
                                     <div class="content__post-name">
@@ -297,7 +303,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-12 mt-2">
                                 <div class="content__post">
                                     <div class="content__post-img" style="background-image: url(./source/14.png)"></div>
                                     <div class="content__post-name">
@@ -335,11 +341,10 @@
             </section>
         </main>
 
-
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-md-5 col-12">
                         <div class="footer-logo"></div>
                         <p class="pt-2">Giòn là thương hiệu mới được thành lập và phục vụ đối tượng có thu nhập ổn định nên vẫn còn khá nhiều thiếu sót
                             cũng như khó khăn trong việc tiếp cận khách hàng
@@ -354,7 +359,7 @@
                             <i class='bx bx-right-arrow-alt'></i>
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-12">
                         <h4>Thành Lập</h4>
                         <ul class="footer-menu">
                             <li>
@@ -371,8 +376,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3 d-flex flex-column">
-                        <h4>Đã đăng kí</h3>
+                    <div class="col-md-3 col-12 d-flex flex-column">
+                        <h4>Đã đăng kí</h4>
                         <div class="img"></div>
                         <input type="email" placeholder="Email:">
                         <button class="btn">Đồng ý</button>

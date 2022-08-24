@@ -1,0 +1,123 @@
+@media screen and (max-width: 478px) {
+    header>section {
+        display: none;
+    }
+    .header {
+        height: 100%;
+        margin: 4px auto;
+    }
+    .logo {
+        height: 50px;
+    }
+    .icon-menu {
+        display: block;
+        font-size: 2rem;
+    }
+    .header__right,
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .header__right {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--primary-color);
+    }
+    .btn-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+    }
+    .menu {
+        padding: 0;
+        margin-top: 3rem;
+    }
+    .btn.search {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .search input {
+        display: inline-block;
+        flex: 1;
+    }
+
+    /* banner */
+    .bannerOne>.image-banner, 
+    .bannerTwo>.image-banner {
+        height: 30vh;
+    }
+
+    /* sale */
+    .content__sale {
+        margin: 2rem 0;
+    }
+    .btn-description {
+        margin-bottom: 1rem;
+    }
+    .box__voucher {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .col-md-3.mt{
+        margin-top: 1rem;
+    }
+
+    /* menu */
+    .menu__box,
+    .submenu {
+        display: none;
+    }
+    .content__intro-description {
+        padding: 1rem;
+    }
+    .content__intro-itemImg {
+        height: 180px;
+    }
+
+    /* advice */
+    .content__advice {
+        padding-top: 30%;
+    }
+    .content__advice-description {
+        width: 100%;
+    }
+    .content__advice::before {
+        bottom: 25%;
+        right: -5px;
+        width: 190px;
+        height: 190px;
+    }
+
+    /* contact */
+    .content__contact-desc,
+    .content__contact > p {
+        display: none;
+    }
+    .form {
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 5rem;
+    }
+    .footer .row {
+        flex-direction: column-reverse;
+    }
+    .footer h4 {
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
