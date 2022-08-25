@@ -39,7 +39,6 @@ header>section {
     color: #fff;
     background-color: var(--primary-color);
 }
-
 .options,
 .menu {
     list-style: none;
@@ -74,13 +73,22 @@ header>section {
 .icon-menu {
     display: none;
 }
+.icon-menu.active {
+    display: none;
+}
 .btn-close {
+    display: none;
+}
+.btn-close.active {
     display: none;
 }
 .header__right {
     height: 100%;
     display: flex;
     align-items: center;
+}
+.header__right.active {
+    display: block;
 }
 .menu {
     display: flex;

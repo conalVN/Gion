@@ -28,10 +28,10 @@
         background-color: var(--primary-color);
     }
     .btn-close {
+        display: block;
         position: absolute;
         right: 10px;
         top: 10px;
-        display: block;
     }
     .menu {
         padding: 0;
@@ -113,6 +113,9 @@
     }
 
     /* contact */
+    .content__contact {
+        min-height: 80vh;
+    }
     .content__contact-desc,
     .content__contact > p {
         display: none;
@@ -121,6 +124,7 @@
         width: 100%;
         height: 100%;
         top: 0;
+        border-radius: 0;
     }
 
     /* footer */
@@ -140,5 +144,101 @@
 
 /* tablet */
 @media screen and (max-width: 768px) {
-    
+    .options-item {
+        padding: 0;
+    }
+    .btn.search {
+        display: none;
+    }
+    .logo {
+        width: 75px;
+    }
+    .menu-item {
+        padding: 0;
+        margin: 0 .2rem;
+    }
+    .menu-link {
+        font-size: 1.1rem;
+    }
+    a[href="#"],
+    a[href="#info"] {
+        display: none;
+    }
+
+    /* banner  */
+    .bannerOne>.image-banner {
+        height: 50vh;
+    }
+    .bannerTwo>.image-banner {
+        height: 55vh;
+    }
+
+    /* sale */
+    .content__sale {
+        margin: 3rem 0;
+    }
+    .box__voucher {
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .btn-description {
+        margin-bottom: 1rem;
+    }
+    .col-md-3.mt {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* menu */
+    .content__menu {
+        min-height: 70vh;
+    }
+    .menu__box {
+        width: inherit;
+    }
+
+    /* intro */
+    .content__intro-description {
+        padding: 1rem;
+    }
+    .content__intro-itemImg {
+        height: 270px;
+    }
+
+    /* advice */
+    .content__advice {
+        padding-top: 55%;
+    }
+    .content__advice::before {
+        width: 250px;
+        height: 250px;
+        bottom: 25%;
+        right: 5px;
+    }
+    .content__advice-description {
+        width: 100%;
+    }
+
+    /* contact */
+    .content__contact > p {
+        text-align: justify;
+        margin: 6rem auto 0;
+        width: 80% !important;
+        padding-top: 10px;
+    }
+
+    .content__contact-desc {
+        width: 40%;
+        font-size: 1rem;
+    }
+    .content__contact-desc p {
+        margin: 0;
+        padding-left: 10px;
+    }
+    .form {
+        width: 60%;
+    }
+    .img-sub {
+        height: 80px;
+    }
 }
