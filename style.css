@@ -368,11 +368,12 @@ header>section {
 }
 .content__post-img {
     height: 200px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .content__post-name {
-    padding-left: 3rem;
+    padding: .5rem 0 0 3rem;
     text-align: start;
     position: relative;
 }
@@ -450,9 +451,30 @@ form input {
     padding: 10px 0;
     border-bottom: 1px solid #888;
 }
+.footer-menu li:last-child {
+    border: none;
+}
+.footer-menu p {
+    margin: 0;
+}
 .footer .btn{
     margin-top: 10px;
     width: 50%;
     color: #fff;
     background-color: var(--primary-color);
+}
+.img-sub {
+    padding: 5px;
+    margin: .2rem 0 1rem;
+    width: 50%;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./source/sub.png);
+}
+.footer input {
+    outline: none;
+    border-radius: 6px;
+    padding: 2px 8px;
 }

@@ -8,7 +8,17 @@ $('.icon-menu').onclick = function() {
 }
 
 $('.btn-close').onclick = function() {
-    $('.icon-menu').style.display = 'block'
     $('.header__right').style.display = 'none'
+    $('.icon-menu').style.display = 'block'
+}
 
+$$('.menu-link').forEach((el, i) => {
+    el.addEventListener('click', () => {
+        closeMenu()
+    })
+});
+
+function closeMenu() {
+    $('.header__right').style.display = 'none'
+    $('.icon-menu').style.display = 'block'
 }

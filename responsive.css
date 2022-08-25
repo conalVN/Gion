@@ -1,4 +1,5 @@
-@media screen and (max-width: 478px) {
+/* mobile */
+@media screen and (max-width: 480px) {
     header>section {
         display: none;
     }
@@ -36,21 +37,30 @@
         padding: 0;
         margin-top: 3rem;
     }
+    .menu-link:hover {
+        color: #fff;
+    }
     .btn.search {
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
     .search input {
         display: inline-block;
         flex: 1;
     }
+    .search .btn {
+        background-color: #000;
+    }
 
     /* banner */
-    .bannerOne>.image-banner, 
+    .bannerOne>.image-banner {
+        height: 40vh;
+    }
     .bannerTwo>.image-banner {
-        height: 30vh;
+        height: 50vh;
     }
 
     /* sale */
@@ -78,6 +88,14 @@
     }
     .content__intro-itemImg {
         height: 180px;
+    }
+
+    /*  */
+    .content__product {
+        padding: 4rem 0;
+    }
+    .content__note {
+        margin: 3rem auto 5rem;
     }
 
     /* advice */
@@ -115,9 +133,12 @@
     .footer h4 {
         margin-top: 2rem;
     }
+    .img-sub {
+        width: 30%;
+    }
 }
 
-
+/* tablet */
 @media screen and (max-width: 768px) {
     
 }
